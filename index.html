@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+
+        .heading {
+            color: rgb(254, 254, 254);
+            font-size: 30px;
+            background-color: darkcyan;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .pp {
+            font-size: 80px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .personal {
+            font-size: 30px;
+            margin: 0;
+            background-color: rgb(41, 248, 206);
+            padding: 10px;
+        }
+
+        .ppp {
+            text-align: center;
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 400px;
+        }
+
+        .education-heading {
+            font-size: 50px;
+            background-color: darkcyan;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+.name{
+    color: rgb(48, 4, 136);
+}
+.butt{
+    left: 50%;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    top: 10%;
+   
+}
+.button{
+    font-size: small;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(20, 204, 183);
+    border: none;
+}
+.button:hover{
+    font-size: large;
+width: 150px;
+background-color:darkcyan;
+transition: 2s;
+color: aliceblue;
+}
+.hobbies{
+    font-size: 20px;
+            margin: 0;
+            background-color: rgb(41, 248, 206);
+            padding: 10px;
+}
+.img{
+    display: inline-block;
+    margin-left: 400px;
+    border-radius: 30%;
+    
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="pp">Profile</h1>
+    </header>
+    <div style="
+    display: grid;
+    ">
+    <div class="personal">
+        <h1 class="heading"><strong>Personal Information</strong></h1>
+        <div style=" text-align: left " class="ppp">
+            <h1><span class="name"> Name:</span> Karthikeyan</h1>
+            <h1><span class="name">Age:</span> 18</h1>
+            <h1><span class="name">Place:</span>Hyderabad</h1>
+           
+        </div>
+        <div class="img"> <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" alt="profile picture" height="150px" width="150px"></div>
+    </div>
+    <div class="personal">
+        <h1 class="heading"><strong>Education</strong></h1>
+        <ul style="text-align: left;">
+            <li>
+                Bachelor of technology in IT at IIITA</li>
+                <li>
+                    Intermedidiate in Miity edu, Hyderabad
+                </li>
+                <li>
+                    Schooling at All saints high school,Hyderabad
+                </li>
+        </ul>
+        </div>
+        <div class="personal">
+            <h1 class="heading"><strong>Skills</strong></h1>
+            <div style=" text-align: left" class="ppp">
+                <ul>
+                    <li>
+                        HTML
+                    </li>
+                    <li>CSS</li>
+                    <li>C/C++</li>
+                </ul>
+            </div>
+            <div class="personal">
+                <h1 class="heading"><strong>Hobbies</strong></h1>
+                <div style=" text-align: left" class="ppp">
+                    <h1>Chess,Badminton,Reading and watching movies</h1>
+                </div>
+                <div>
+                    <div class="personal">
+                        <h1 class="heading">Additional Details</h1>
+                       <div class="butt"> <button  class="button" onclick="toggleDetails()">Show Details</button></div>
+                        <div class="details" id="details">
+                            <p>
+                                <div class="hobbies">
+                                    <h1 class="heading"><strong>Hobbies</strong></h1>
+                                    <div style=" text-align: left" class="ppp">
+                                        <h1>Chess,Badminton,Reading and watching movies</h1>
+                                    </div>
+                            </p>
+                        </div>
+                        <script>
+                            function toggleDetails() {
+                                var detailsContent = document.getElementById("details");
+                                if (detailsContent.style.display === "none") {
+                                    detailsContent.style.display = "block";
+                                } else {
+                                    detailsContent.style.display = "none";
+                                }
+                            }
+                        </script>
+               
+        </div>
+</div>
+
+    
+    </section>
+    </div>
+</div>
+</body>
+
+</html>
